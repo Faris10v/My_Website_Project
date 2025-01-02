@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my website</title>
+</head>
+<body>
+    <header >
+        <nav>
+        <ul>
+           <li><a href="index.html">Go Home </a></li>
+          <li><a href="about.html"> Go to About me</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://twitter.com/faris10v">Twitter</a></li>
+            <li><a href="https://www.instagram.com/kfwvv/">instgram</a></li>
+            <li><a href="https://www.tiktok.com/@6pnn">tiktok</a></li>
+            <li><a href="s44150301@students.tu.edu.sa">Email</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+<h1 id="feedback">Feedback Form</h1>
+        <form method="post" action="serverscript.php">
+            <fieldset> <legend> How the website:</legend>
+                <input type="checkbox" name="experience[]" value="Excellent"> Excellent<br>
+                <input type="checkbox" name="experience[]" value="Good"> Good<br>
+                <input type="checkbox" name="experience[]" value="bad"> bad<br>
+                <input type="checkbox" name="experience[]" value="very bad"> very bad<br>
+            </fieldset>
+        
+            <fieldset> <legend>Topic of Feedback:</legend>
+                <input type="radio" name="topic" value="Website Design" required> Website Design<br>
+                <input type="radio" name="topic" value="Website Content" required> Website Content<br>
+                <input type="radio" name="topic" value="Website Navigation" required> Website Navigation<br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Specific Feedback and proposal :</legend>
+                <textarea name="specificFeedback and proposal" rows="10" cols="50" placeholder="Enter your feedback and proposal here" required></textarea>
+            </fieldset>
+                <legend> Website rating out of 10</legend>
+
+<p> <label>Range :
+    1 <input type="range" name="Website rating out of 10" min="0" max="10" value="10"> 10
+</label>
+</p>
+
+
+</main>
+<p>
+ <input type="submit" name="submit" value="Submit">
+</p>
+        </form>
+    <style>
+
+      
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:#023047;
+      color: #ffffff;
+      padding: 10px;;
+    }
+    
+    nav ul {
+      display: flex;
+      background-color:#023047;
+     
+    }
+    
+    nav li {
+      margin-right: 30px;
+      background-color:#023047;
+    }
+    
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+   
+    
+    h1#feedback {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    main{
+      background-color: #bc6c25;
+  
+    }
+    
+  fieldset{
+  border-color: #000000;
+  }
+    
+    legend {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    textarea {
+      width: 50%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    
+    input[type="range"] {
+      width: 20%;
+    }
+    
+    input[type="submit"] {
+      background-color: #023047;
+      color: #fff;
+      border: none;
+      padding: 10px 60px;
+      border-radius: 10px;
+      cursor: pointer;
+      
+    }
+    </style>
+        
+       <footer></footer>       
+
+</body>
+</html>
